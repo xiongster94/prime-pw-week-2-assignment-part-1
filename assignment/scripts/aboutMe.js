@@ -65,13 +65,12 @@ else{
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets + friendsPets
-
-if ( pets < friendsPets ){
-  mostPets -= pets;
+let mostPets;
+if ( pets > friendsPets ){
+  mostPets = pets;
 }
-else if ( pets > friendsPets ){
-  mostPets -= friendsPets;
+else if ( pets < friendsPets ){
+  mostPets = friendsPets;
 }
 console.log( 'With', mostPets, 'pets, I have the most pets.' );
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
