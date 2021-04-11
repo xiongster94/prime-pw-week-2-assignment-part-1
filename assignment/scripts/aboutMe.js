@@ -74,5 +74,14 @@ else if ( pets < friendsPets ){
 }
 console.log( 'With', mostPets, 'pets, I have the most pets.' );
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-
+let mostPetsOne;
+switch (pets < friendsPets ){
+  case true:
+    mostPetsOne = friendsPets;
+    break;
+  case false:
+    mostPetsOne = pets;
+    break;
+}
+console.log( mostPetsOne );
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
